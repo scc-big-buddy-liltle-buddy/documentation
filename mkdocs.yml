@@ -1,0 +1,9 @@
+site_name: Saigonchildren Development Documentation
+theme:
+  palette:
+    primary: blue
+  name: material
+  logo: assets/icons/logo.png
+  font:
+    text: Raleway
+  language: en
