@@ -7,3 +7,15 @@ theme:
   font:
     text: Raleway
   language: en
+nav:
+  - Homepage: index.md
+  - Software Requirement Specification: software_requirement_specification.md
+  # - Development Documentation: 
+  #   - Introduction: development_documentation/introduction.md
+  #   - Development Environment: development_documentation/development_environment.md
+  #   - Development Workflow: development_documentation/development_workflow.md
+  #   - Coding Style: development_documentation/coding_style.md
+  #   - Git Workflow: development_documentation/git_workflow.md
+  #   - Deployment: development_documentation/deployment.md
+  - Contact: contact.md
+  

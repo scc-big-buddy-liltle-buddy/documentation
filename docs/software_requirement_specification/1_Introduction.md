@@ -1,3 +1,0 @@
-# SRS Document
-
-I am rewriting...
