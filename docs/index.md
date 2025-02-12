@@ -1,7 +1,7 @@
 #### Welcome to the Saigonchildren Documentation 
 
 <p align="center">
-  <img src="../assets/banners/banner.png"  style="height: 100px" alt="Saigonchildren">
+  <img src="./assets/banners/banner.png"  style="height: 100px" alt="Saigonchildren">
 </p>
 
 ### About us

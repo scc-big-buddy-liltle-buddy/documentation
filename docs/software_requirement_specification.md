@@ -44,6 +44,7 @@ We have three main user roles in the system are `Admin`, `Mentor`, and `Mentee`.
 
 Below is the use case diagram for the system:
 
+![System use case diagram](usecase_diagram.png)
 
 # 4. System architecture & Design
 
