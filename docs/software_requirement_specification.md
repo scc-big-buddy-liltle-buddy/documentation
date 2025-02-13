@@ -44,20 +44,114 @@ We have three main user roles in the system are `Admin`, `Mentor`, and `Mentee`.
 
 Below is the use case diagram for the system:
 
+![System use case diagram](./assets/diagrams/usecase_diagram.png)
+
+## 3.3 Core workflows
+
+Business processes in the system:
+
+### 3.3.1 Mentee authentication flow
+
+![Mentee authentication flow](./assets/diagrams/mentee-authentication-flow.png)
+
+### 3.3.2 Mentor authentication flow
+
+- Mentor registers an account then the mentor will be approved by the Admin. The mentor will be notified by email when the account is approved. The mentor can log in to the system with some other page approved by the Admin.
+
+![Mentor authentication flow](./assets/diagrams/mentor-authentication-flow.png)
+
+### 3.3.3 Admin authentication flow
+
+![Admin authentication flow](./assets/diagrams/admin-authentication-flow.png)
+
+### 3.3.4 Matching flow
+
+In the matching flow we have two main steps: `Create matching rules` and `Run matching algorithm`.
+
+![Matching flow](match-flow.png)
+
+After that admin need to accept the mentee 
+
+![alt text](accept-mentee.png)
+
+### 3.3.4 Group documents 
+
+We have two type of documents for a group: Resources and agreements.
+
+Resource hub flow for mentor in a group: 
+![Resource hub](resource-doc-flow.png)
+
+Agreement flow for mentor in a group:
+
+![alt text](agreement-doc-flow.png)
+
+### 3.3.5 Group tasks
+
+### 3.3.6 Admin manage users
+
+- Admin manages users.
+
+### 3.3.7 Admin manage matches 
+
+- Admin manages matches.
 
 # 4. System architecture & Design
 
-# 4.1 High-Level architecture
+# 4.1 Class Diagram
 
-# 4.2 Database Design
+As above use case diagram, we have three main components in the system are `Admin`, `Mentor`, and `Mentee`. Below is the class diagram for the system:
 
-# 4.3 Component Diagram
+# 4.2 Database design
 
-# 4.4. Matching algorithm design
+For the best performance, we use MySQL as the database for the system. We use Physical Data Model to design the database schema.
+
+![Physical Data Model](./assets/diagrams/physical_data_model.png)
+
+# 4.3. Matching algorithm design
+
+I am working on the design of the matching algorithm here: [Matching Algorithm Design]()
+
+# 4.4. User interface design
+
+Our team is working on the design of the user interface here: [Figma]()
+
+# 4.5. Technologies
+
+![Overall technologies](./assets/diagrams/technologies.png)
+
+- **Backend**: FastAPI, SQLAlchemy, MySQL, Alembic, Pydantic, JWT, Docker, Docker Compose
+- **Frontend**: React, Zustand, Axios, AntD
+- **CI/CD**: Github Actions
+
 
 # 5. Non-functional requirements
 
+## 5.1. Performance
+
+- The system should be able to handle 100 concurrent users.
+- The system should be able to handle 100 requests per second.
+- The system should be able to handle 1000 users.
+- The system should be able to handle 1000 sessions.
+
+## 5.2. Security
+
+- The system should use JWT for authentication.
+- The system should use HTTPS for all requests.
+- The system should use CORS to prevent unauthorized requests.
+
+## 5.3. Availability
+
+- The system should have an uptime of 99.9%.
+
+
 # 6. Testing Requirements
+
+- The system should have unit tests for all components.
+- The system should have integration tests for all components.
+- The system should have end-to-end tests for all components.
+- The system should have performance tests for all components.
+
+I will update soon.
 
 # 7. Project timeline
 
